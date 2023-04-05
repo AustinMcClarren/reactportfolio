@@ -1,0 +1,228 @@
+body {
+	font-family: "Shadows Into Light", cursive;
+	font-weight: 700;
+	min-width: 100vh;
+	background-color: #222;
+	color: #FFFFFC;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* TOP OF PAGE */
+#initials {
+	font-weight: bolder;
+	font-size: 1.7rem;
+	color: rgb(253, 231, 76);
+	margin-top: 0.5rem;
+	margin-left: 3rem;
+}
+
+.nav-section {
+	display: flex;
+	justify-content: space-between;
+}
+
+#link-git {
+	color: rgb(253, 231, 76);
+	text-decoration: none;
+	cursor: pointer;
+	margin-right: 1rem;
+	margin-top: 0.5rem;
+	font-size: 1.2rem;
+}
+
+h6 {
+	text-align: center;
+	color: #fde74c;
+}
+
+.about-me {
+	font-size: 25px;
+	margin-top: 1rem;
+	text-align: center;
+	justify-items: center;
+	color: #FFFFFC;
+}
+
+#about-head{
+	text-align: center;
+	margin-top: 30rem;
+}
+
+.big-font {
+	text-align: left;
+	font-weight: bolder;
+	margin-left: 50rem;
+}
+
+
+.about-me {
+	text-align: center;
+	color: #FFFFFC;
+	font-weight: bolder;
+	font-size: 250%;
+}
+
+.app{
+  font-weight: bolder;
+	margin-top: 0.5rem;
+	margin-left: 3rem;
+  text-align: center;
+}
+
+#glitch {
+	text-align: center;
+	height: 20rem;
+	font-weight: bolder;
+	font-size: 10rem;
+	position: relative;
+	text-shadow: 0.05em 0 0 #ff0000bf,
+	-0.025em -0.05em 0 #00ff00bf, 0.025em 0.05em 0 #0000ffbf;
+	margin: auto;
+	margin-top: 10rem;
+	width: 50%;
+	margin-right: 18.5rem;
+	animation: glitch 400ms infinite;
+}
+
+#glitch span:first-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#glitch span:first-child::after {
+	animation: glitch 650ms infinite;
+	clip-path: polygon(0 0, 100% 0%, 100% 45%, 0 45%);
+	transform: translate(-0.025em, -0.0125em);
+	opacity: 0.8;
+	content: attr(data-text);
+}
+
+#glitch span:last-child::after {
+	animation: glitch 375ms infinite;
+	clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+	transform: translate(0.0125em, 0.025em);
+	opacity: 0.8;
+	content: attr(data-text);
+}
+
+
+/* PROJECT SECTION */
+#projects {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20rem;
+}
+
+.project-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 2rem;
+}
+
+.project {
+	width: 30%;
+	margin: 1em;
+}
+
+.project img {
+	width: 100%;
+}
+
+.project h3 {
+	margin-top: 1em;
+}
+
+h2,
+h3 {
+	font-size: 4rem;
+	color: #fde74c;
+}
+
+/* glitch animation for name  */
+@keyframes glitch {
+  0%{
+      text-shadow: 0.05em 0 0 rgba(255, 210, 137),
+      -0.05em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em 0.05em 0 rgb(253, 231, 76);
+  
+  }
+  14%{
+      text-shadow: 0.05em 0 0 rgba(255, 210, 137),
+      -0.05em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em 0.05em 0 rgb(253, 231, 76);
+  
+  }
+  15%{
+      text-shadow: -0.05em -0.025em 0 rgba(255, 210, 137),
+      0.025em 0.025em 0 rgba(244, 172, 50, 0.75), -0.05em -0.05em 0 rgb(253, 231, 76);
+  
+  }
+  49%{
+      text-shadow: -0.05em -0.025em 0 rgba(255, 210, 137),
+      0.025em 0.025em 0 rgba(244, 172, 50, 0.75), -0.05em -0.05em 0 rgb(253, 231, 76);
+  
+  }
+  50%{
+      text-shadow: 0.025em 0.05em 0 rgba(255, 210, 137),
+      0.05em 0 0 rgba(244, 172, 50, 0.75), 0 -0.05em 0 rgb(253, 231, 76);
+  
+  }
+  99%{
+      text-shadow: 0.025em 0.05em 0 rgba(255, 210, 137),
+      0.05em 0 0 rgba(244, 172, 50, 0.75), 0 -0.05em 0 rgb(253, 231, 76);
+  
+  }
+  100%{
+      text-shadow: -0.025em 0 0 rgba(255, 210, 137),
+      -0.025em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em -0.05em 0 rgb(253, 231, 76);
+  
+  }
+  
+  }
+  #container {
+    height: unset;
+    max-width: 50%;
+    margin-right: 2rem;
+    width: 25%;
+    list-style: none;
+    height: 100vh;
+  }
+  
+  
+  /* for mobile! */
+  
+  
+   /* small */
+   @media screen and (max-width: 576px) {
+    body {
+      background-color: #222;
+      background-image: radial-gradient(#222, #222);
+    
+    }
+  } 
+   /* medium  */
+   @media screen and (min-width: 768px) {
+    body {
+      background-color: #222;
+      background-image: radial-gradient(#222, #222);
+    }
+  } 
+   /* large */ 
+   @media screen and (min-width: 992px) {
+    body {
+      background-color: #222;
+      background-image: radial-gradient(#222, #222);
+    }
+  } 
+  
+  /* xl  */
+   @media screen and (min-width: 1200px) {
+    body {
+      background-color: #222;
+      background-image: radial-gradient(#222, #222);
+    }
+  } 
