@@ -1,24 +1,36 @@
-import React from "react";
 import "./App.css";
-import Projects from "./pages/Projects";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import GitHubLink from "./components/links";
 
+
+// import Footer from "./components/Footer";
+// import ProjectDisplay from "./pages/ProjectDisplay";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}>
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="Experience" element={<Experience />} />
-          {/* <Route path="contact" element={<Contact />} /> */}
-          {/* <Route path="*" element={<NoPage />} /> */}
-        </Route>
-      </Routes>
-    </BrowserRouter>
+          {/* <Route path="/project/:id" element={<ProjectDisplay />} /> */}
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/links" element={<GitHubLink/>} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
+
 export default App;
+
+
+

@@ -1,0 +1,22 @@
+.about-me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.backround-col{
+	text-align: center;
+	margin-top: 20rem;
+
+	
+}
+
+#about-head{
+  font-weight: 800;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
