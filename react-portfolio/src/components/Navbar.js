@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import {Link,useLocation} from "react-router-dom";
 import "../styles/Navbar.css";
 import DataObjectIcon from '@mui/icons-material/DataObject';
-import GithubLink from "./links";
 
 
 
