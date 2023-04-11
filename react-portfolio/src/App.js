@@ -5,7 +5,8 @@ import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import Resume from "./components/Resume";
+// import ContactForm from "./components/ContactForm";
 
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          {/* <Route path="/project/:id" element={<ProjectDisplay />} /> */}
           <Route path="/experience" element={<Experience />} />
+          <Route path="/Resume" element={<Resume />} />
+          {/* <Route path="/ContactForm" element={<ContactForm />} /> */}
         </Routes>
         <Footer />
       </Router>

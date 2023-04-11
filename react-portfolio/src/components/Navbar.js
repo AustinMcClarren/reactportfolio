@@ -39,7 +39,8 @@ return(
         <Link to="/">Home</Link>
         <Link to="/Projects">Projects</Link>
         <Link to="/Experience">Experience</Link>
-        {/* <Link to="/github">GITHUB</Link> */}
+        <Link to="/Resume">Resume</Link>
+        {/* <Link to="/SocialLink">Socials</Link> */}
 
 
     </div>

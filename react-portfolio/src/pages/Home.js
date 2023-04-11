@@ -7,9 +7,7 @@ function Home() {
     
     <div className="backround-col">
       <h2 id="about-head">I AM AUSTIN MCCLARREN.</h2>
-      {/* <a className=''><i class="fa fa-github fa-3x"></i></a> */}
       <p className="about-me">
-        
         Hello, nice seeing you here. I am a passionate web developer with a background in front-end and back-end development.<br />
         <br/>
       </p>
